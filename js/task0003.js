@@ -39,10 +39,6 @@ $.click(cancle,function(){
 })
 
 //自建浮层里的确定操作增加目录或者子目录
-$.click(ensure,function(){
-	var newcatalog=catalog.value;
-	alertDiv.style.display='none';
-	mask.style.display='none';
 	if(getStorage('file')){
 		var file=getStorage('file');
 		file.key='file';
@@ -54,6 +50,10 @@ $.click(ensure,function(){
 		'name': '默认分类()',
 		'children': []
 	})
+$.click(ensure,function(){
+	var newcatalog=catalog.value;
+	alertDiv.style.display='none';
+	mask.style.display='none';
 	}
 	if($('.active')){
 		var ss=$('.active').getElementsByTagName('span');
