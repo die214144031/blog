@@ -25,7 +25,6 @@ function init(){
 }
 		
 }
-init();
 //弹出自建浮层和遮蔽层
 $.click(newwrap[0],function(){
 	catalog.value='';
@@ -51,6 +50,7 @@ $.click(cancle,function(){
 		'children': []
 	})
 	}
+	init();
 $.click(ensure,function(){
 	var newcatalog=catalog.value;
 	alertDiv.style.display='none';
