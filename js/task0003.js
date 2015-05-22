@@ -49,6 +49,7 @@ $.click(cancle,function(){
 		'name': '默认分类()',
 		'children': []
 	})
+	saveStorage(file);
 	}
 	init();
 $.click(ensure,function(){
