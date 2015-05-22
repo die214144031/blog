@@ -50,11 +50,11 @@ $.click(cancle,function(){
 		'name': '默认分类()',
 		'children': []
 	})
+	}
 $.click(ensure,function(){
 	var newcatalog=catalog.value;
 	alertDiv.style.display='none';
 	mask.style.display='none';
-	}
 	if($('.active')){
 		var ss=$('.active').getElementsByTagName('span');
 		var obj=getStorage('file');
