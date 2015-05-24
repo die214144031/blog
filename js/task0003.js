@@ -49,6 +49,10 @@ $.click(cancle,function(){
 		'name': '默认分类()',
 		'children': []
 	})
+	file.push({
+			'name': 'IFE()',
+			children: []
+		})
 	saveStorage(file);
 	}
 	init();
@@ -265,6 +269,17 @@ $.click(storage,function(){
 })
 $.click(remove,remo);
 $.click(remove,empty);
+function initdata(){
+	var indata={};
+	indata.Title='Task0003';
+	indata.timer='2015-05-22';
+	indata.articler='完成但是代码不具有可读性呀';
+	indata.parentname='IFE()';
+	indata.situation='finish';
+	indata.key=indata.timer+indata.Title;
+	saveStorage(indata);
+}
+initdata();
 function saveStorage(obj){	
 	var str=JSON.stringify(obj);
 	localStorage.setItem(obj.key,str);	
