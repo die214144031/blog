@@ -256,12 +256,12 @@ $.click(storage,function(){
 		data.parentname=parentname[0].innerHTML;
 		data.key=inTime.value+inTitle.value;
 		data.situation='false';
-		saveStorage(data);
 		if($('.centeractive')){
 		var ss=$('.centeractive').parentNode.getElementsByTagName('dt')[0];
 		var key=ss.innerHTML+$('.centeractive').innerText;
 		window.localStorage.removeItem(key);
 	}
+	saveStorage(data);
 		empty();
 		remo();
 		show();
