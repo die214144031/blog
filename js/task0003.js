@@ -25,7 +25,6 @@ function init(){
 }
 		
 }
-init();
 //弹出自建浮层和遮蔽层
 $.click(newwrap[0],function(){
 	catalog.value='';
@@ -39,10 +38,6 @@ $.click(cancle,function(){
 })
 
 //自建浮层里的确定操作增加目录或者子目录
-$.click(ensure,function(){
-	var newcatalog=catalog.value;
-	alertDiv.style.display='none';
-	mask.style.display='none';
 	if(getStorage('file')){
 		var file=getStorage('file');
 		file.key='file';
@@ -54,7 +49,17 @@ $.click(ensure,function(){
 		'name': '默认分类()',
 		'children': []
 	})
+	file.push({
+			'name': 'IFE()',
+			children: []
+		})
+	saveStorage(file);
 	}
+	init();
+$.click(ensure,function(){
+	var newcatalog=catalog.value;
+	alertDiv.style.display='none';
+	mask.style.display='none';
 	if($('.active')){
 		var ss=$('.active').getElementsByTagName('span');
 		var obj=getStorage('file');
@@ -251,12 +256,12 @@ $.click(storage,function(){
 		data.parentname=parentname[0].innerHTML;
 		data.key=inTime.value+inTitle.value;
 		data.situation='false';
-		saveStorage(data);
 		if($('.centeractive')){
 		var ss=$('.centeractive').parentNode.getElementsByTagName('dt')[0];
 		var key=ss.innerHTML+$('.centeractive').innerText;
 		window.localStorage.removeItem(key);
 	}
+	saveStorage(data);
 		empty();
 		remo();
 		show();
@@ -264,6 +269,17 @@ $.click(storage,function(){
 })
 $.click(remove,remo);
 $.click(remove,empty);
+function initdata(){
+	var indata={};
+	indata.Title='Task0003';
+	indata.timer='2015-05-22';
+	indata.articler='完成但是代码不具有可读性呀';
+	indata.parentname='IFE()';
+	indata.situation='finish';
+	indata.key=indata.timer+indata.Title;
+	saveStorage(indata);
+}
+initdata();
 function saveStorage(obj){	
 	var str=JSON.stringify(obj);
 	localStorage.setItem(obj.key,str);	
