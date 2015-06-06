@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+p {
+	text-indent: 2em
+}
+a {
+	text-decoration: none;
+}
+/* header部分 */
+@media screen and (max-width:980px) {
+.header-github {
+display:none;
+}
+}
+.header {
+	background: #639;
+	height: 80px;
+	width: 100%;
+	min-width: 1300px;
+	position: relative;
+}
+.header-center {
+	position: absolute;
+	width: 980px;
+	height: 80px;
+	left: 50%;
+	margin-left: -490px;
+}
+.header-logo {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+.header-github {
+	position: absolute;
+	right: 10px;
+	bottom: -5px;
+}
+.header-github img{
+	border-style: none;
+}
+.navagition-div {
+	position: absolute;
+	width: auto;
+	bottom: 5px;
+	right: 0;
+}
+.navagition-div li {
+	float: left;
+	list-style-type: none;
+}
+.navagition-div a {
+	font-family: "宋体";
+	font-size: 16px;
+	margin-left: 28px;
+	color: #FFF;
+	list-style-type: none;
+}
+/* 输入交互 */
+.c1{
+	width:  700px;
+	margin: 10px auto;
+	border:  1px solid #000;
+	line-height: 30px;
+	}
+#f3{
+	text-align: center;
+	margin-top: 40px;
+}
+	.btn{
+	margin:  10px auto;
+	display:  block;
+	}
+	/* 倒计时 */
+	#wrap1{
+		width: 500px;
+		padding: 30px;
+		margin: 0 auto;
+	}
+	#wrap2{
+		width: 500px;
+		margin: 0 auto;
+		letter-spacing: 2px;
+	}
