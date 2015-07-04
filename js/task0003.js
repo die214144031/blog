@@ -273,7 +273,7 @@ function initdata(){
 	var indata={};
 	indata.Title='Task0003';
 	indata.timer='2015-05-22';
-	indata.articler='完成但是代码不具有可读性呀';
+	indata.articler='完成';
 	indata.parentname='IFE()';
 	indata.situation='finish';
 	indata.key=indata.timer+indata.Title;
