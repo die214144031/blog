@@ -1,10 +1,39 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/task0002.css">
-	<link rel="stylesheet" type="text/css" href="css/task0002_4.css"></head>
+	<style type="text/css">
+	#fa{
+		width: 600px;
+		height: 400px;
+		/* position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -200px;
+		margin-left: -300px; */
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 80px;
+		overflow: hidden;
+		position: relative;
+	}
+	ul,li{
+		margin: 0;
+		padding: 0;
+	}
+	#fa li{
+		list-style-type: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#fa li img{
+		display: block;
+	}
+</style>
+</head>
 <body>
 <header>
     <body>
@@ -19,18 +48,21 @@
                     <li><a href="task0002_3.html">轮播图</a></li>
                     <li><a href="task0002_4.html">输入提示框</a></li>
                      <li><a href="task0002_5.html">原生拖拽交互</a></li>
-                     <li><a href="task0006.html">淡入淡出</a></li>
+                      <li><a href="task0006.html">淡入淡出</a></li>
                        <li><a href="BCBKE.html">白块儿游戏</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </header>
-	<div id="wrap">
-		<input type="text" id='int'>
-		<ul id='oi' class="hid"></ul>
-	</div>
-	<script type="text/javascript" src="js/uti.js"></script>
-	<script type="text/javascript" src="js/task0002_4.js"></script>
+<div id="fa"><ul>
+<li><img src="img/h1.jpg" height="400" width="600"></li>
+<li><img src="img/h2.jpg" height="400" width="600"></li>
+<li><img src="img/h3.jpg" height="400" width="600"></li>
+<li><img src="img/h4.jpg" height="400" width="600"></li>
+<li><img src="img/h5.jpg" height="400" width="600"></li>
+</ul></div>
+<script type="text/javascript" src="js/uti.js"></script>
+<script type="text/javascript" src="js/task0006.js"></script>
 </body>
 </html>

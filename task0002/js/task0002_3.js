@@ -11,7 +11,7 @@ window.onload = function() {
 	function anni(e) {
 		amd = true;
 		var newLeft = parseInt(list.style.left) + e;
-		var time = 400; //位移总时间
+		var time = 300; //位移总时间
 		var itv = 10;
 		var speed = e / (time / itv);
 		//动画函数

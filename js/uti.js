@@ -157,7 +157,7 @@
 	}
 
 	//来个不完善的选择器顶着用
-	function $(selector) {
+	function $(selector,parent) {
 		//ID选择器
 		if (selector.substring(0, 1) == '#') {
 			return document.getElementById(selector.substring(1));
@@ -187,8 +187,7 @@
 			}
 			return vArry[0];
 		} else {
-			var vArry = [];
-			return document.getElementsByTagName(selector)[0];
+			return parent.getElementsByTagName(selector);
 		}
 	}
 
