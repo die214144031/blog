@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+button{
+	outline: none;
+}
+ul{
+	list-style: none;
+}
+#content{
+	position: relative;
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	/* background-color: #F0F0F6; */
+	/* background-color: #EFE5FF; */
+	opacity: 0.9;
+	z-index: 999;
+}
+#chess{
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -225px;
+	margin-left: -225px;  
+	box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
+}
+.butt{
+	margin-top: 545px;
+	margin-left: 40px;
+	height: 30px;
+	width: 66px;
+	border-radius: 10%;
+	opacity: 0.8;
+}
+#doublePeople{
+	margin-left: 100px;
+}
+#music{
+	position: absolute;
+	top: 10px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	background: url(../image/music_disc.png) no-repeat center center;
+	background-size: 100%;
+}
+ 
+.play {
+	animation: music_disc 4s linear infinite;
+}
+
+@keyframes music_disc {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.leftPicture{
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	background: url(../image/3.jpg) no-repeat;
+	background-size: cover;
+	left: -550px;
+	z-index: 5;
+	top: 50%;
+	margin-top: -275px;
+	/* animation: leftPicture 4s linear infinite; */
+	overflow: hidden;
+	border-radius: 50%; 
+	background-position: -50px;
+}
+.rightPicture{
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	top: 50%;
+	margin-top: -275px;
+	background: url(../image/2.jpg) no-repeat;
+	background-size: cover;
+	right: -550px;
+	z-index: 5;
+	/* animation: rightPicture 4s linear infinite; */
+	overflow: hidden;
+	border-radius: 50%; 
+	background-position: -120px;
+}
+.zzc{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	/* background: #F0EBE2; */
+	background: #F7F4F4;
+	overflow: hidden;
+	z-index: 1000;
+}
+ @keyframes leftPicture{
+	0% {
+		transform: rotate(0deg);
+
+	}
+	100%{
+		transform: rotate(-360deg);
+	}
+}  
+ @keyframes rightPicture{
+	0% {
+		transform: rotate(0deg) ;
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes leftScale{
+	0% {
+		transform: scale(0); 
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes rightScale{
+	0% {
+		transform: scale(0); 
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+ body{
+	background: url(../image/4.jpg);
+	background-size: 100%;
+} 

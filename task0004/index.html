@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="Zh-en">
+<head>
+	<meta charset="UTF-8">
+	<title>五子棋</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	 <div class="zzc">
+	    <!--  <p>蛮喜欢看动漫的^ ^<br></p> -->
+		<div class="leftPicture"></div>
+		<div class="rightPicture"></div>
+	</div>
+	<div id="leftBackground"></div>
+	 <div id="content">
+	<div id="music" class="play"></div>
+	<canvas id="chess" width="450px" height="450px"></canvas>
+	<button class="butt" id="doublePeople">人人对战</button>
+	<button class="butt" id="peopleUi">人机对战</button>
+	<button class="butt" id="giveUp">重新开始</button>
+	<button class="butt" id="back">悔棋</button>
+	</div>
+	<!-- <div id="rightBackground"></div> -->
+	<audio autoplay="true">
+		<source src="music/yaowei.mp3" type="audio/mpeg">
+	</audio>
+	<script type="text/javascript" src="js/donghua.js"></script>
+	<script type="text/javascript" src="js/ai.js"></script>
+</body>
+</html>
