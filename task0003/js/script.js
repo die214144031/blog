@@ -5,21 +5,11 @@ window.onload = function() {
 
 	var music = document.getElementById("music");
 	var audio = document.getElementsByTagName("audio")[0];
-	//音乐播放停止，光盘停止
+
 	audio.addEventListener("ended", function(event) {
 		music.setAttribute("class", "");
 	}, false);
 
-	//点击音乐 ，控制播放
-	//music.onclick = function() {
-	//		if (audio.paused) {
-	//			audio.play();
-	//			this.setAttribute("class","play");
-	//		} else {
-	//			audio.pause();
-	//		this.setAttribute("class","");
-	//		};
-	//	};
 	music.addEventListener("touchstart", function(event) {
 		if (audio.paused) {
 			audio.play();

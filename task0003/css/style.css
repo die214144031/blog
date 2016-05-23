@@ -344,17 +344,7 @@ html, body {
 	z-index: -1;
 	background-size: 100%;
 }
-#page3> .p3_logo {
-	width: 34.6875vw;
-	height: 6.327vh;
-	position: absolute;
-	top: 7.82vh;
-	right: 0;
-	left: 0;
-	margin: auto;
-	background: url("../images/p3_logo.png")no-repeat center center;
-	background-size: 100%;
-}
+
 #page3> .p3_title {
 	width: 48.125vw;
 	height: 50vh;
